@@ -10,8 +10,8 @@ for i in list(seqs.index.values):
     "name": seqs.at[i, 'name'],
     "modelSeeds": [],  
     "sequences": [
-      {"growthFactor": {'sequence': seqs.at[i, 'gf'], 'count': 2}},
-      {"affibody": {'sequence': seqs.at[i, 'aff'], 'count': 1}},
+      {"proteinChain": {'sequence': seqs.at[i, 'gf'], 'count': 2}},
+      {"proteinChain": {'sequence': seqs.at[i, 'aff'], 'count': 1}},
     ],
     }
     jobs.append(job)
